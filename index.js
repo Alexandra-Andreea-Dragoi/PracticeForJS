@@ -877,6 +877,38 @@
 //Write a function cutComment that takes one line of JavaScript and returns a possible line comment trimmed. If the line contains no line comment, null should be returned. For simplicity, we assume that the code does not contain the comment characters within a string.
 //Example: cutCommt('let foo; // bar') should return 'bar'.
 
-function cutComment () {
+// function cutComment () {
 
-}
+// }
+
+// I don't understand the exercise
+
+
+//64. To be used: for loop
+//Write a function addTo that accepts a number as a parameter and adds all natural numbers smaller or equal than the parameter. The result is to be returned.
+//Example: addTo(3) should return 1+2+3 = 6.
+
+// function addTo (a) {
+//     let sum = 0;
+//     for (let i = 0; i <= a; i ++) {
+//      sum += i;
+//     };
+//      return sum;
+//   };
+
+//65. To be used: Factorial
+//Write a function factorial that calculates the factorial of a positive integer.
+//Example: factorial(3) should return 6.
+
+// function factorial (a) {
+//     let product = 1;
+//     for (let i = 1; i <= a; i++) {
+//      product *= i;
+//     };
+//     return product;
+//   };
+
+//66. To be used: Loops and arrays
+//Write a function mean that accepts an array filled with numbers and returns the arithmetic mean of those numbers.
+//Example: mean([1, 2, 3]) should return (1+2+3)/3 = 2.
+
