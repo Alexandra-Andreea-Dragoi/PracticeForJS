@@ -912,3 +912,90 @@
 //Write a function mean that accepts an array filled with numbers and returns the arithmetic mean of those numbers.
 //Example: mean([1, 2, 3]) should return (1+2+3)/3 = 2.
 
+// function mean(a) {
+//     let sum = 0;
+//     let len = a.length;
+//     for (let i = 0; i < len; i++) {
+//      sum += parseInt(a[i]);
+//     };
+//     return (sum / len);
+//   };
+
+//67. To be used: while loop
+//Write a function spaces that takes a natural number n and returns a string of n spaces.
+//Example: spaces(1) should return ' '.
+
+// function spaces(a) {
+//     let str = "";
+//     while (str.length < a) {
+//     str += " ";
+//     };
+//     return str;
+//   };
+
+//68. To be used: do...while loop
+//Write a function lcm that takes two natural numbers and calculates their least common multiple (lcm). The lcm of two natural numbers a und b is the smallest natural number that is divisible by a and b.
+//Example: lcm(4, 6) should return 12.
+
+// ade with the help of solution. the idea of code was good, the logic was rong.
+// function lcm (a, b) {
+//     let a1 = parseInt(a);
+//     let b1 = parseInt(b); 
+//     let lcmNum = 0; 
+//     do {
+//     lcmNum ++;
+//     }
+//     while(
+//     (lcmNum % a1) !== 0  || (lcmNum % b1) !== 0
+//     ) 
+//     return lcmNum;  
+//   };
+
+//69. To be used: greatest common divisor (gcd). 
+//Write a function gcd that takes two natural numbers and calculates their gcd.
+//Example: gcd(6, 15) should return 3.
+
+// function gcd(a, b) {
+//     let a1 = parseInt(a);
+//     let b1 = parseInt(b); 
+  
+//     let gcdNum = Math.min(a1, b1);
+    
+//     do {
+//       if (
+//       a1 % gcdNum !== 0 ||
+//       b1 % gcdNum !== 0) 
+//       {gcdNum --;}
+//     }
+  
+//     while(a1 % gcdNum !== 0 || b1 % gcdNum !== 0)
+  
+  
+//     return gcdNum;
+//   };
+
+
+
+//70. To be used: break and continue
+//Write a function isPrime that checks whether a passed number is prime. In case of a prime number it should return true, otherwise false.
+//Example: isPrime(7) should return true and isPrime(8) should return false.
+
+//A simple but slow method of checking the primality of a given number n, called trial division, tests whether n is a multiple of any integer between 2 and sqare root n
+
+//A simple but slow method of checking the primality of a given number a, called trial division, tests whether a is a multiple of any integer between 2 and sqare root from a.
+
+// function isPrime(num) { 
+//     if (num <= 1) return false; 
+//     if (num % 2 == 0 && num > 2) return false; 
+//     const s = Math.sqrt(num); 
+//     for(let i = 3; i <= s; i += 2) { 
+//         if(num % i === 0) return false; 
+//     }
+//     return true;
+//   }
+//stackoverflow :)
+
+//71. To be used: Nested loops
+//Write a function sum that calculates the sum of all elements of a two-dimensional array.
+//Example: sum([[1, 2], [3]]) should return 6.
+
