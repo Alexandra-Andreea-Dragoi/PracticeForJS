@@ -238,6 +238,15 @@
 //exercise 4
 //Write a function that returns the elements on odd positions in a list.
 
+// let list = [];
+// function oddNumbers (a) {
+//     for (let i = 0; i <= a; i ++){
+//         if (i % 2 !== 0) {
+//             list.push(i);
+//         }
+//     };
+//     return list;
+// }
 
 
 //PRACTICE FROM THE COURSE//
@@ -998,4 +1007,161 @@
 //71. To be used: Nested loops
 //Write a function sum that calculates the sum of all elements of a two-dimensional array.
 //Example: sum([[1, 2], [3]]) should return 6.
+
+// function sum (c) {
+  
+//     let sum = 0;
+//     for (let i = 0; i < c.length; i++){
+//       for (let j = 0; j < c[i].length; j++) {
+//         sum = sum + c[i][j];
+//       };
+//     };
+//     return sum;
+//   };
+
+//72. To be used: The arguments object
+//Write a function max that calculates the maximum of an arbitrary number of numbers.
+//Example: max(1, 2) should return 2 and max(2, 3, 1) should return 3.
+
+// function max () {
+
+//     let maxNum = [];
+//     for (let i = 0; i < arguments.length; i++) {
+//       maxNum.push(parseInt(arguments[i]));
+//       console.log(maxNum);
+//     }
+//     let maxVal = Math.max(...maxNum);
+//     return maxVal;
+//   };
+
+//73. To be used: NaN
+//Write a function parseFirstInt that takes a string and returns the first integer present in the string. If the string does not contain an integer, you should get NaN.
+//Example: parseFirstInt('No. 10') should return 10 and parseFirstInt('Babylon') should return NaN.
+
+//made with solution, still  not clear.
+
+// function parseFirstInt(input) {
+
+//     let inputToParse = input;
+  
+//     for (let i = 0; i < input.length; i++) {
+//       let firstInt = parseInt(inputToParse);
+//       if (!Number.isNaN(firstInt)) {
+//         return firstInt;
+//       }
+//       inputToParse = inputToParse.substr(1);
+//     }
+  
+//     return NaN;
+//   }
+
+
+//74. To be used: String: split()
+//Write a function add that takes a string with a summation task and returns its result as a number. A finite number of natural numbers should be added. The summation task is a string of the form '1+19+...+281'.
+//Example: add('7+12+100') should return 119.
+
+// function add (a) {
+//     let str = a;
+//     let parts = str.split("+");
+//     let len = parts.length;
+//     let sum = 0;
+//     for (let i = 0; i < len; i++) {
+//       sum += parseInt(parts[i]);
+//     };
+//     return sum;
+//   };
+
+//75. To be used: Functions call functions
+//Write a function sum that takes an array of numbers and returns the sum of these numbers. Write a function mean that takes an array of numbers and returns the average of these numbers. The mean function should use the sum function.
+
+// function sum (a) {
+//     let arr = a;
+//     let sum = 0;
+//     let len = arr.length
+//     for (let i = 0; i < len; i++) {
+//       sum += arr[i];
+//     };
+//     return sum;
+//   };
+  
+//   function mean (b) {
+//     let len = b.length;
+//     let result = sum(b) / len; 
+//     return result;
+//   };
+
+//76. To be used: Recursion
+//Write a function reverse that reverses the order of the characters in a string. The function should be recursive.
+// Example: reverse('live') should return 'evil'.
+
+// function reverse (a) {
+//     let arrA = [...a];
+//     let revArrA = arrA.reverse();
+//     let newStr = revArrA.join("");
+//     return newStr;
+//    };
+
+//77. To be used: Roman numerals I
+//Write a function arabic that converts a Roman number (up to 1000) into an Arabic.
+//Example: arabic('CDLXXXIII') should return 483
+
+
+
+/////////////////////////////////////////////////////
+
+//EXERCISES FROM THE SECOND LINK: https://adriann.github.io/programming_problems.html
+
+// Lists, Strings
+
+//5. Write a function that computes the running total of a list.
+// function sum(a) {
+//     let numbSum = 0;
+//     let len = a.length;
+//     for (let i = 0; i < len; i++) { 
+//         numbSum += parseInt(a[i]); 
+//     };
+//     return numbSum;
+// }
+
+//6. Write a function that tests whether a string is a palindrome.
+// function isPalindrome (a) {
+//     let len = a.length;
+//     for (let i = 0; i < (len/2); i++) {
+//         if (a[i] !== a[len - 1 - i]) {
+//            return "Is  not palindrome!";
+//         } else {
+//            return "Is Palindrome!";
+//         };
+//     };
+//  }
+
+//7. Write three functions that compute the sum of the numbers in a list: using a for-loop, a while-loop and recursion. (Subject to availability of these constructs in your language of choice.)
+
+// 1
+// function add(a) {
+//    let sum = 0;
+//    for (let i = 0; i < a.length; i++) {
+//       sum += a[i];
+//    }
+//    return sum;
+// }
+
+
+
+// 2
+
+// function addd(a) {
+//   let i = 0;
+//   let sum = 0;
+//   do {
+//     sum += a[i];
+//     i++;
+//   }
+//     while (i < a.length);
+//     return sum;
+// }
+
+
+// 3
+
 
