@@ -1164,4 +1164,52 @@
 
 // 3
 
+// function adddd(n, total = 0) {
+//     if (n === 0) 
+//         return total;
+//         return adddd(n-1, total+=n);
+// }
+
+// function yovko(a, total = 0) {
+//     // Exit condition
+//     if (a.length < 1) {
+//         return total;
+//     }
+//     // Logic
+//     console.log("the array now is: " + a + " and total is: " + total);
+//     total += a[0]
+//     a == a.shift();
+//     return yovko(a, total);
+// }
+
+
+
+// Write a function on_all that applies a function to every element of a list. Use it to print the first twenty perfect squares. The perfect squares can be found by multiplying each natural number with itself. The first few perfect squares are 1*1= 1, 2*2=4, 3*3=9, 4*4=16. Twelve for example is not a perfect square because there is no natural number m so that m*m=12. (This question is tricky if your programming language makes it difficult to pass functions as arguments.)
+
+
+// function displayPerfectSquares(a, list = []) {
+//     if (a === 0) {
+//         return list;
+//     };
+//     b = a * a;
+//     list == list.push(b);
+//     return displayPerfectSquares(a - 1, list);
+// }
+
+
+// function displayPerfectSquares(a, c = 1, list = []) {
+    
+//     if (c > a) {
+//         return list;
+//     };
+
+//     let b = c * c;
+//     list == list.push(b);
+    
+//     return displayPerfectSquares(a, c + 1, list);
+// }
+
+
+
+
 
