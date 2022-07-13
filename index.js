@@ -1210,6 +1210,20 @@
 // }
 
 
+//9. Write a function that concatenates two lists. [a,b,c], [1,2,3] → [a,b,c,1,2,3]
+
+// function unite(arr1, arr2) {
+//     console.log(arr1);
+//     console.log(arr2);
+//     let arr3 = arr1.concat(arr2);
+//     return arr3;
+// }
+
+
+//10. Write a function that combines two lists by alternatingly taking elements, e.g. [a,b,c], [1,2,3] → [a,1,b,2,c,3].
+
+
+
 
 
 
