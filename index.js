@@ -1222,8 +1222,37 @@
 
 //10. Write a function that combines two lists by alternatingly taking elements, e.g. [a,b,c], [1,2,3] → [a,1,b,2,c,3].
 
+// function unite(arr1, arr2) {
+//     let arr3 = [];
+//     let len1 = arr1.length;
+//     let len2 = arr2.length;
+//     let maxOf = Math.min(len1, len2);
+//     for (let i = 0; i < maxOf; i++) {
+//        arr3.push(arr1[i], arr2[i]); 
+//     }
+//     return arr3;
+// }
+
+//11. Write a function that merges two sorted lists into a new sorted list. [1,4,6],[2,3,5] → [1,2,3,4,5,6]. You can do this quicker than concatenating them followed by a sort.
+
+// function sort(arr1, arr2) {
+//     let arr3 = arr1.concat(arr2);
+//     let sortArr3 = arr3.sort();
+//     return sortArr3;
+// }
 
 
+//12. Write a function that rotates a list by k elements. For example [1,2,3,4,5,6] rotated by two becomes [3,4,5,6,1,2]. Try solving this without creating a copy of the list. How many swap or move operations do you need?
 
-
+// function rotateElem(arr1, n) {
+//     for (let i = 1; i <= n; i++) {
+//         console.log(arr1);
+//         let one = arr1[0];
+//             console.log(one);
+//         arr1.shift();
+//             console.log(arr1);
+//         arr1.push(one);
+//             console.log(arr1); 
+//     }             
+// }
 
