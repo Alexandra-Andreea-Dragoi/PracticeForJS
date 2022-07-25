@@ -1256,3 +1256,37 @@
 //     }             
 // }
 
+
+//13. Write a function that computes the list of the first 100 Fibonacci numbers. The first two Fibonacci numbers are 1 and 1. The n+1-st Fibonacci number can be computed by adding the n-th and the n-1-th Fibonacci number. The first few are therefore 1, 1, 1+1=2, 1+2=3, 2+3=5, 3+5=8.
+
+// function fibo(n) {
+//     let list = [0, 1];
+
+//     for (let i = 2; i < n; i++) {
+//     list[i] = list[i - 2] + list[i - 1];
+//     }
+//     console.log(list);
+// } 
+
+//14. Write a function that takes a number and returns a list of its digits. So for 2342 it should return [2,3,4,2].
+
+// function number(a) {
+//     let arr = []
+//     let n = a.toString();
+//     console.log(n);
+//     let l = n.length;
+//     console.log(l);
+//     for (let i = 0; i < l; i++) {
+//         arr.push(parseInt(n[i]));
+//     }
+//     console.log(arr);
+// }
+
+//15. Write functions that add, subtract, and multiply two numbers in their digit-list representation (and return a new digit list). If you’re ambitious you can implement Karatsuba multiplication. Try different bases. What is the best base if you care about speed? If you couldn’t completely solve the prime number exercise above due to the lack of large numbers in your language, you can now use your own library for this task.
+
+// function mathem(a, b) {
+//     let results = [];
+//     results.push(a+b, a-b, a*b);
+//     console.log(results);
+// }
+
